@@ -14,7 +14,7 @@
     "require": {
         "php": ">=5.3.0",
         "mos/cdatabase": "dev-master",
-        "mos/cform": "2.*@dev",
+        "mos/cform": "2.*@dev"
     },
     "autoload": {
         "psr-0": {

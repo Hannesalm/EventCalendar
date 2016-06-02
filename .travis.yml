@@ -5,4 +5,4 @@ php:
     - hhvm
  
 script: 
-    - phpunit --bootstrap test/config.php test
+    - phpunit --bootstrap webroot/calendar.php calendar

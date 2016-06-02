@@ -5,4 +5,4 @@ php:
     - hhvm
  
 script: 
-    - phpunit --bootstrap webroot/calendar.php calendar
+     - phpunit --bootstrap webroot/calendar.php --coverage-clover coverage.clover test

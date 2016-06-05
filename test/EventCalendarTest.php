@@ -1,5 +1,5 @@
 <?php
-namespace gel\logger;
+namespace qcode\eventCalendar;
 /**
  * A testclass
  *

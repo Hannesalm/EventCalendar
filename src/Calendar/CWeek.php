@@ -1,6 +1,5 @@
 <?php
 
-namespace Anax\Calendar;
 
 class CWeek {
     private $weekdays = array();

@@ -1,6 +1,5 @@
 <?php
 
-namespace Anax\Calendar;
 
 class CDay {
     private $name;

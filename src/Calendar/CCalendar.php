@@ -1,9 +1,8 @@
 <?php
 
-namespace Anax\Calendar;
 
-use Anax\Events\Event;
-use Anax\Events\EventController;
+include 'CWeek.php';
+include 'CDay.php';
 
 class CCalendar {
     private $weeks = array();
@@ -15,10 +14,14 @@ class CCalendar {
         $this->events = $values;
     }
 
-    public function getValues(){
-        if(isset($_GET['year']) && isset($_GET['month'])){
+    public function getValues($year = null, $month = null){
+        if($year && $month){
+            $this->setYear($year)->setMonth($month);
+        }
+        else if(isset($_GET['year']) && isset($_GET['month'])){
             $this->setYear($_GET['year'])->setMonth($_GET['month']);
-        } else {
+        }
+        else {
             $this->setYear(date('Y'))->setMonth(date('m'));
         }
     }

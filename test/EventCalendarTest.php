@@ -22,7 +22,22 @@ class EventCalendarTest extends \PHPUnit_Framework_TestCase
         $res = count($calendar->getWeeks());
         $exp = 0;
 
+        //Tests if an array has been generated
         $this->assertGreaterThan($exp, $res);
+
+        //Tests if empty days are correct
+        $exp = 4;
+        $res = $calendar->getWeeks();
+        $count = 0;
+
+        foreach($res as $value => $key){
+            foreach($key->getWeekdays() as $day){
+                if($day->getDayOfMonthNumber() == null){
+                    $count++;
+                }
+            }
+        }
+        $this->assertEquals($exp, $count);
     }
 
 }

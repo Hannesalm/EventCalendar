@@ -6,18 +6,35 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7b593c329d00694ef3fa74c9b77a3c76
 {
+    public static $files = array (
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
+            'Mos\\TextFilter\\' => 15,
             'Mos\\' => 4,
+        ),
+        'A' => 
+        array (
+            'Anax\\' => 5,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Mos\\TextFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mos/ctextfilter/src/TextFilter',
+        ),
         'Mos\\' => 
         array (
             0 => __DIR__ . '/..' . '/mos/cdatabase/src',
             1 => __DIR__ . '/..' . '/mos/cform/src',
+        ),
+        'Anax\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/anax/mvc/src',
         ),
     );
 
@@ -27,6 +44,17 @@ class ComposerStaticInit7b593c329d00694ef3fa74c9b77a3c76
             'Monolog' => 
             array (
                 0 => __DIR__ . '/../..' . '/src',
+            ),
+            'Michelf' => 
+            array (
+                0 => __DIR__ . '/..' . '/michelf/php-markdown',
+            ),
+        ),
+        'H' => 
+        array (
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
     );

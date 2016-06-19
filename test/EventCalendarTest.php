@@ -34,7 +34,7 @@ class EventCalendarTest extends \PHPUnit_Framework_TestCase
      */
 
     static private $event;
-    const NAME =  "Event in db";
+    const NAME =  "test";
 
     /**
      * setUpBeforeClass, called once for all tests in this class.
@@ -44,8 +44,8 @@ class EventCalendarTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        self::$event = new EventDatabase;
-        self::$event->setOptions(['dsn' => "sqlite:memory::", "verbose" => false]);
+        self::$event = new EventDatabase();
+        self::$event->setOptions(['dsn' => 'sqlite::memory:', "verbose" => false]);
         self::$event->connect();
         self::$event->dropTableIfExists("test");
         self::$event->execute();

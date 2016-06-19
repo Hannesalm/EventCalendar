@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Mos\\TextFilter\\' => array($vendorDir . '/mos/ctextfilter/src/TextFilter'),
     'Mos\\' => array($vendorDir . '/mos/cdatabase/src', $vendorDir . '/mos/cform/src'),
+    'Anax\\' => array($vendorDir . '/anax/mvc/src'),
 );

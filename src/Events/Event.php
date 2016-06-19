@@ -6,7 +6,7 @@ namespace Anax\Events;
  * Model for Events.
  *
  */
-class Event extends \Anax\Users\CDatabaseModel {
+class Event extends \Anax\Events\CDatabaseModel {
 
     public function getSource()
     {

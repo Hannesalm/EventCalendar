@@ -1,6 +1,6 @@
 <?php
 namespace qcode\eventCalendar;
-
+use Mos\Database;
 /**
  * A testclass
  *
